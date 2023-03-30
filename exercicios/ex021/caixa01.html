@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            
+            /*Box Sizing*/
+            height: 300px;
+            width: 300px;
+
+            /*Anatomia da caixa*/
+            border: 10px solid darkslategray;
+            padding: 10px;
+            margin: 20px auto 40px auto;
+            outline: 5px dashed salmon;
+        }
+
+        a {
+            border: 10px solid red;
+            padding: 10px;
+        }
+
+        /*Margin se refere ao espaçamento externo*/
+        /*Posso automatizar margens específicas também*/
+        /* Para centralização podemos utilizar o margin:auto */
+        /*Margin ocupa toda a área do elemento box-level*/
+        /*Com a ajuda do DevTools podemos identificar facilmente a anatomia das caixas.*/
+        /*Podemos alterar o comportamente dos elementos HTML, utilizando a propriedade display, onde podemos alterar um elemento box-level para inline-level ou vice-versa. As diferenças principais são de que alterando um elemento inline-level para box-level poderemos alterar o seu box sizing e outras propriedades.*/
+        /*O body não ocupa a tela inteira, somente o tamanho do seu conteúdo. */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a></p>. Vamos ver como tudo isso funciona.
+</body>
+</html>

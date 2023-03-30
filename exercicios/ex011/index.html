@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p><small>Taxa de Rejeição ou Bounce Rate é a porcentagem de visitantes que acessam um site e saem sem acessar novas páginas ou interagir com seu conteúdo, acionando apenas uma visualização de página. Quanto maior a taxa de rejeição, pior o engajamento dos visitantes.</small></p>
+
+    
+    <picture>
+        <!---Terceira tentativa-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!---Segunda tentativa-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <!---Primeira tentativa-->
+        <img src="./imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!---<audio src="midia/happy-mistake.mp3" controls preload="metadata"></audio>-->
+    
+    <!---MP3 wAV OGG (Formatos de áudio compatíveis)-->
+
+    <!--Áudio sem src, indicaremos as sources dentro desta tag.-->
+
+    <!---Parâmetro preload serve para indicar como o arquivo deve ser carregado. Utilizando o valor metadata indicamos que o áudio será carregado só quando o usuário apertar o play e só as informações básicas serão carregadas. Já o valor auto irá carregar o áudio inteiro assim que a página for carregada (má prática).-->
+
+    <!--Parâmetro controls, serve para fornecer botões para controle do áudio para o usuário.-->
+    <audio preload="metadata" controls loop>
+        <!---Primeira tentativa de carregar o arquivo.-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+         <!---Segunda tentativa de carregar o arquivo.-->
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+         <!---Terceira tentativa de carregar o arquivo.-->
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3" download="happy-mistake" type="audio/mpeg"></a>Clique aqui para baixar o arquivo MP3.</p>
+    </audio>
+</body>
+</html>
+

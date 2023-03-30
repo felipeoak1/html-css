@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(223, 19, 19);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*Pseudoclasse que indicar que algo já foi visitado, normalmente um link*/
+        a:visited {
+            color: darkred;
+        }
+        /*Pseudoclasse utilizada para identificar quando o cursor passa por cima de algum elemento.*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*Pseudoclasse para realizar uma ação quando clicarmos em algum elemento*/
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(236, 19, 19);
+
+        }
+        
+        /*Pseudoelemento para editar algo que venha depois no html*/
+        .especial::after {
+            content: "1";
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+        /*Pseudoelemento para editar algo que venha antes no html*/
+        .especial::before{
+            content: "2";
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+         <li><a href="https://gustavoguanabara.github.io" rel="external" target="_blank">
+           Repositório GitHub
+        </a></li>
+        <li><a href="https://youtube.com/cursoemvideo" rel="external" target="_blank"  class="especial">Canal do YouTube
+        </a></li>
+       <li><a href="https://www.cursoemvideo.com" rel="external" target="_blank">
+            Site do Cursoemvídeo
+        </a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url("../fontes/idroid.otf");
+}
+
+
+body {
+    margin: 0;
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0px;
+}
+header {
+    background-image: linear-gradient(to bottom, #26985B, #106033, #043D1D);
+    height: 12.5em;
+    text-align: center;
+    color: white;
+}
+
+header > nav {
+    text-align: left;
+    display: block;
+    padding-left: 8px;   
+}
+
+header > nav > a {
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > a:hover {
+    background-color: rgb(96, 187, 96);
+    transition: 0.5s;
+    border-radius: 0.3em;
+    color: black;
+}
+
+header > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+header > h2 {
+    font: normal normal 1em Arial;
+    display: block;
+    width: 500px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 10px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(5, 82, 5);
+    padding: 8px;
+    color: white;
+}
+
+aside {
+    background-color: #ACCEBB;
+    padding: 10px 10px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+}
+
+#fonterobo {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: "idroid";
+    background-image: linear-gradient(to right, #88E0AF, white);
+    padding-left: 10px;
+}
+
+.identacao {
+    text-indent: 2em;
+}
+
+.links {
+    font: normal bold 1em Arial;
+    color: black;
+    padding: 0px 5px;
+    text-decoration: none;
+    background-color: #88E0AF;
+}
+
+.imgsandroid {
+    display: block;
+    margin: auto;
+    width: 760px;
+}
+
+#videoyt {
+    background-color: #04391B;
+
+}
+
+#videoyt > iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+
+#h3quermais {
+    color: white;
+    background-color: #04391B;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 40px 20px 0px 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+}
+
+.paragrafos {
+    margin: 0px 20px;
+}
+
+.paragrafospadding {
+    margin: 20px 20px;
+}
+
+#fonterobo1 {
+    background-color: white;
+    font-family: "idroid";
+}
+
+#master {
+    display: inline;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+
+#esquerda {
+    display: inline-block;
+    margin: 30px 0em 0px 10em;
+}
+
+#direita {
+    display: inline-block;
+    margin: 10px;
+}
+
+.paragrafos2{
+    margin: 30px 0px;
+}
+
+.bugdroid {
+    display: block;
+    margin: auto;
+}
+
+#identacaofooter {
+    text-indent: 2em;
+}
+
+.pfooter{
+    margin: 0px;
+}
+
+@media screen and (max-width: 600px){
+
+
+  
+   main {
+    width: 584px;
+   }
+
+    header {
+        width: 583px;
+        
+    }
+    
+    header > h2 {
+        text-align: center;
+        width: 480px;
+        
+    }
+
+    footer {
+        width: 568px;
+        text-align: center;
+        
+    }
+
+    footer > p {
+        margin: 0px;
+    }
+    
+    #esquerda {
+        display: inline-block;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #irinapq {
+        width: 511px;
+        display: block;
+        margin: auto;
+    }
+
+    #videoyt {
+        background-color: white;
+    }
+
+    #fonterobo1 {
+        width: 580px;
+    }
+
+    .roboandrois {
+        display: block;
+        margin: auto;
+    }
+    
+    .paragrafos {
+        text-align: justify;
+        padding-right: 20px;
+    }
+
+    #direita {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: -35px;
+    }
+
+    #master {
+        display: inline-block;
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+    }
+}

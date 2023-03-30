@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Utilizamos a âncora que é a tag &lt;a&gt;</p>
+    <p>Também podemos utilizar o parâmetro rel, onde ele indica qual o destino do nosso link, algumas opções que temos são:</p>
+    <ul>
+        <li>next - Indica que o link é para a próxima parte do documento.</li>
+        <li>prev - Indica que o link é para a parte anterior do documento atual.</li>
+        <li>author - Indica que é um link para o site do autor do artigo atual.</li>
+        <li>external - Indica que é um link para outro site que não faz parte do site atual.</li>
+        <li>nofollow - Indica que é um link para um site não endossado, como um link pago.</li>
+    </ul>
+    <p>E o parâmetro <abbr title="Hypertext Reference">href</abbr> indicamos o link. Também podemos utilizar o parâmetro target com as seguintes opções:</p>
+    <ul>
+        <li>_blank - Abre uma nova guia com o link.</li>
+        <li>_self - Abre o site sobrepondo o nosso site (valor padrão).</li>
+    </ul>
+    <p>Outra opção também é quando queremos indicar um link para download, para isso, referênciaremos o endereço do arquivo no parâmetro href, utilizaremos o parâmetro "download=" com o nome do arquivo que estamos disponibilizando e por último, o parâmeto "type", para indicarmos o tipo do nosso arquivo. Para mais informações sobre os tipos de arquivo, consulte o site oficial da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="external"
+         target="_blank">IANA</a></p>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" rel="external" target="_blank">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no Youtube.</a></p>
+    <p>Para indicar ao navegador como lidar em relação a linguagem do site que estamos referenciando, usamos a tag <strong>"hreflang"</strong></p>
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeiro página do site, se você quiser pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="./noticias/pag003.html" target="_self" rel="next">página de notícias.</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="./livro/Recibo Fertimport 1302 331.pdf" download="Recibo Fertimport 1302 331.pdf" type="application/pdf">Baixar o livro em PDF.</a></li>
+        <li><a href="./livro/Recibo Fertimport 1302 331.zip" download="Recibo Fertimport 1302 331.zipf" type="application/zip">Livro compactado em ZIP.</a></li>
+    </ul>
+</body>
+</html>
+
