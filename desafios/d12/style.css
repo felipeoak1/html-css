@@ -57,14 +57,12 @@ header a:link {
 section article {
     font-family: 'Sriracha', cursive;
     font-size: 5.5vh;
-    line-height: 95.6px;
-    
-
+    line-height: 95.6px;  
 }
 
 #section1 p {
     padding: 7vh 0px 5vh 5vh;
-    max-width: 62vh;
+    max-width: 70vh;
     line-height: 10vh;
 }
 
@@ -75,22 +73,18 @@ section article {
 
 #section2 article {
     color: white;
-    max-width: 60vh;
+    max-width: 70vh;
     padding: var(--formatacaoparagrafo);
 }
 
 #section2 p {
     background-color: rgba(0, 0, 0, 0.377);
-    max-width: 65vh;
+    max-width: 70vh;
     line-height: 10vh;
 }
 
-#section3 article {
-    max-width: 70vh;
-}
-
 #section3 article p {
-    max-width: 60vh;
+    max-width: 80vh;
     line-height: 10vh ;
     padding: var(--formatacaoparagrafo);
 }
@@ -101,7 +95,7 @@ section article {
 }
 
 #section4 article {
-    max-width: 70vh;
+    max-width: 80vh;
     padding: var(--formatacaoparagrafo);
     
 }
@@ -111,10 +105,11 @@ section article {
     color: white;
     line-height: 10vh;
     padding: var(--formatacaoparagrafo);
+   
 }
 
 #section5 article {
-    max-width: 67vh;
+    max-width: 74vh;
     padding: var(--formatacaoparagrafo);
     line-height: 10vh;
 }
