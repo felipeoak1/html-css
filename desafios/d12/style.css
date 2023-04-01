@@ -31,7 +31,7 @@ header h1 {
 header p {
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vw;
+    font-size: 3vh;
     margin-top: 18vh;
 }
 
@@ -56,7 +56,7 @@ header a:link {
 
 section article {
     font-family: 'Sriracha', cursive;
-    font-size: 5.5vh;
+    font-size: 5vh;
     line-height: 95.6px;  
 }
 
@@ -75,18 +75,24 @@ section article {
     color: white;
     max-width: 70vh;
     padding: var(--formatacaoparagrafo);
+    max-width: 75vh;
 }
 
 #section2 p {
     background-color: rgba(0, 0, 0, 0.377);
-    max-width: 70vh;
     line-height: 10vh;
 }
 
+#section3 article {
+    max-width: 90vh;
+    font-size: 4.9vh;
+}
+
 #section3 article p {
-    max-width: 80vh;
     line-height: 10vh ;
     padding: var(--formatacaoparagrafo);
+    max-width: 100%;
+
 }
 
 #section4 {
@@ -95,9 +101,8 @@ section article {
 }
 
 #section4 article {
-    max-width: 80vh;
     padding: var(--formatacaoparagrafo);
-    
+    max-width: 80vh;
 }
 
 #section4 p {
@@ -105,6 +110,8 @@ section article {
     color: white;
     line-height: 10vh;
     padding: var(--formatacaoparagrafo);
+    font-size: 4.9vh;
+
    
 }
 
