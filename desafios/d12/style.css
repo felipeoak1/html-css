@@ -68,7 +68,7 @@ section article {
 #section2 article {
     color: white;
     max-width: 60vh;
-    padding: 7vh 0px 5vh 5vh;
+    padding: 7vh 5vh 5vh 5vh;
 }
 
 #section2 p {
@@ -84,7 +84,7 @@ section article {
 #section3 article p {
     max-width: 60vh;
     line-height: 10vh ;
-    padding: 7vh 0vh 5vh 5vh;
+    padding: 7vh 5vh 5vh 5vh;
 }
 
 #section4 {
@@ -94,7 +94,7 @@ section article {
 
 #section4 article {
     max-width: 70vh;
-    padding: 7vh 0px 5vh 5vh;
+    padding: 7vh 5vh 5vh 5vh;
     
 }
 
@@ -102,7 +102,7 @@ section article {
     background-color: rgba(0, 0, 0, 0.377);
     color: white;
     line-height: 10vh;
-    padding: 7vh 0px 5vh 5vh;
+    padding: 7vh 5vh 5vh 5vh;
 }
 
 #section5 article {
