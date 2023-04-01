@@ -81,6 +81,7 @@ section article {
 #section2 p {
     background-color: rgba(0, 0, 0, 0.377);
     line-height: 10vh;
+    padding: 5px;
 }
 
 #section3 article {
@@ -109,8 +110,8 @@ section article {
     background-color: rgba(0, 0, 0, 0.377);
     color: white;
     line-height: 10vh;
-    padding: var(--formatacaoparagrafo);
     font-size: 4.9vh;
+    padding: 5px;
 
    
 }
