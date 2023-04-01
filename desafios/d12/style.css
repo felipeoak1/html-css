@@ -41,6 +41,14 @@ header a:hover {
     text-decoration: underline;
 }
 
+header a:visited {
+    color: white;
+}
+
+header a:link {
+    color: white;
+}
+
 section {
     width: 100%;
     max-height: 400vh;
@@ -129,6 +137,10 @@ footer a {
 }
 
 footer a:visited {
+    color: white;
+}
+
+footer a:link {
     color: white;
 }
 
