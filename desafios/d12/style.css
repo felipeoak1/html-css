@@ -18,14 +18,15 @@ header {
 }
 
 header h1 {
-    font-size: 12vh;
+    font-size: 8vw;
     font-family: 'Passion One', cursive;
+    letter-spacing: 0.03em;
 }
 
 header p {
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3vh;
+    font-size: 2vw;
     margin-top: 18vh;
 }
 
@@ -83,7 +84,7 @@ section article {
 #section3 article p {
     max-width: 60vh;
     line-height: 10vh ;
-    padding: 7vh 0px 5vh 5vh;
+    padding: 7vh 0vh 5vh 5vh;
 }
 
 #section4 {
