@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Passion+One:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+
+    --formatacaoparagrafo: 7vh 2vh 5vh 5vh; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -49,16 +54,11 @@ header a:link {
     color: white;
 }
 
-section {
-    width: 100%;
-    max-height: 400vh;
-}
-
 section article {
-    height: 100%;
     font-family: 'Sriracha', cursive;
     font-size: 5.5vh;
     line-height: 95.6px;
+    
 
 }
 
@@ -76,7 +76,7 @@ section article {
 #section2 article {
     color: white;
     max-width: 60vh;
-    padding: 7vh 5vh 5vh 5vh;
+    padding: var(--formatacaoparagrafo);
 }
 
 #section2 p {
@@ -92,7 +92,7 @@ section article {
 #section3 article p {
     max-width: 60vh;
     line-height: 10vh ;
-    padding: 7vh 5vh 5vh 5vh;
+    padding: var(--formatacaoparagrafo);
 }
 
 #section4 {
@@ -102,7 +102,7 @@ section article {
 
 #section4 article {
     max-width: 70vh;
-    padding: 7vh 5vh 5vh 5vh;
+    padding: var(--formatacaoparagrafo);
     
 }
 
@@ -110,12 +110,12 @@ section article {
     background-color: rgba(0, 0, 0, 0.377);
     color: white;
     line-height: 10vh;
-    padding: 7vh 5vh 5vh 5vh;
+    padding: var(--formatacaoparagrafo);
 }
 
 #section5 article {
     max-width: 67vh;
-    padding: 7vh 0px 5vh 5vh;
+    padding: var(--formatacaoparagrafo);
     line-height: 10vh;
 }
 
