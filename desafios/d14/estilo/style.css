@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     background: black url("../imagens/fundo-madeira.jpg") no-repeat center bottom / cover fixed;
     height: 100vh;
+
 }
 
 main {
@@ -19,7 +20,7 @@ main {
 }
 
 img {
-    max-height: 70vh;
+    max-height: 80vh;
 }
 
 iframe {
@@ -31,4 +32,28 @@ iframe {
     height: 76%;
     width: 86%;
 }
+
+aside {
+    margin-right: 15px;
+    text-align: right;
+}
+
+ul img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
+}
+
+ul img:hover {
+    transform: translate(-3px, -3px);
+    transition: transform .5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+    
+}
+
+
+
+
 
