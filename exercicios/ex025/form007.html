@@ -10,11 +10,11 @@
     <h1>Exemplo de Formulário</h1>
 
     <form action="cadastro.js" method="POST">
-
+        <!-- Com o uso do elemento select podemos fornecer uma lista de valores para o usuário escolher um dos seus valores. -->
         <p>
             <label for="iest">Estado</label>
-            <select name="estado" id="iest">
-                <option value="" selected>---Escolha---</option>
+            <select name="estado" id="iest" required>
+                <option value="" selected disabled>---Escolha---</option>
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -30,6 +30,7 @@
         </p>
 
         <p>
+            <!-- Para fornecermos valores opcionais e ainda permitir que o usuário digite a sua própria opção podemos utilizar o input text, com uma datalist e o acréscimo do atributo list no input. -->
             <label for="iprof">Profissão</label>
             <input type="text" name="prof" id="iprof" list="lstprof">
             <datalist id="lstprof">
@@ -42,7 +43,7 @@
 
         <p>
             <label for="imsg">Mensagem</label>
-            <textarea name="msg" id="imsg" cols="30" rows="10"  placeholder="Sua mensagem aqui"></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
         </p>
 
 
