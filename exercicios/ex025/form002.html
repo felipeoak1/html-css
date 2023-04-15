@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    
+    <form action="cadastro.js" method="POST" autocomplete="on">
+        <p>
+            <!-- 
+                Required serve para tornar o campo em obrigatório o seu preenchimento. 
+                Placeholder serve para dar dicas ao usuário o que ele deve preencher naquele campo.
+                Size indica a quantidade de caracteres que serão exibidos, consequentemente aumentando ou diminuindo o tamanho do campo.
+                Maxlength determina o tamanho máximo de caracteres aceitos naquele campo.
+                Minlength determina o tamanho mínimo de caracteres aceitos naquele campo.
+                autocomplete no formulário só possui dois valores: on ou off. Já nos inputs é possível fornecer que tipo de dado aquele campo está recebendo, assim permitindo sugestões lógicas para aquele campo.
+            -->
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
