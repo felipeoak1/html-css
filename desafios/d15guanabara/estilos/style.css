@@ -97,7 +97,8 @@ div.campo > i {
     padding: 5px;
 }
 
-/* Transform translateY serve para alterarmos a posição do elemento para cima (com valores negativos) ou para baixo. */
+/* Transform translateY serve para alterarmos a posição do elemento para cima (com valores negativos) ou para baixo.
+Também podemos realizar cálculos com o CSS, desta forma podemos atingir valores mais absolutos.*/
 div.campo > input {
     background-color: #94cfcd;
     font-size: 1em;
