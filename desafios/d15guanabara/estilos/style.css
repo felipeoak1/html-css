@@ -20,12 +20,16 @@ html {
     width: 100vw;   
 }
 
+/* Este main não seria necessário, já que a própria section irá servir como container. 
+OBS: É necessário atribuir um height e um width, já que está servindo como position relative para o nosso elemento com position absolute. Caso não seja atribuído valores de largura e altura, o elemento se comportará como o fluxo normal do html e do box model, ou seja, ficará na parte de cima da tela, sem nenhuma largura ou altura.*/
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
+/* Overflow nesta section está sendo utilizando para cortar tudo aquilo que ultrapassa o limite do container.
+OBS: Todas as transições e animações devem ser declaradas sempre como as últimas propriedades. */
 section#login {
     position: absolute;
     top: 50%;
@@ -65,6 +69,8 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+/* Como a section já possui um tamanho definido e o form está dentro dela, então podemos utilizar medidas responsivas como o '%', que irá limitar o tamanho do form para o tamanho máximo do container em que ele está. 
+OBS: Lembrando que o height pode ser um valor estático, já que para tamanhos de telas maiores ou menores a altura se manterá a mesma. */
 form > div.campo {
     display: block;
     background-color: #5f2c82;
@@ -79,6 +85,7 @@ label {
     font-size: 0.9em;
 }
 
+/* Aqui estamos escondendo o nome 'LOGIN' e 'SENHA' para podermos utilizar o espaço em que eles ocupavam, porém para os motores de busca ainda estarão disponíveis. */
 div.campo > label {
     display: none;
 }
@@ -90,6 +97,7 @@ div.campo > i {
     padding: 5px;
 }
 
+/* Transform translateY serve para alterarmos a posição do elemento para cima (com valores negativos) ou para baixo. */
 div.campo > input {
     background-color: #94cfcd;
     font-size: 1em;
@@ -105,6 +113,7 @@ div.campo > input:focus-within {
     background-color: white;
 }
 
+/* A propriedade cursor:pointer permite alterarmos a visualição do nosso mouse*/
 form > input[type=submit] {
     display: block;
     font-size: 1em;

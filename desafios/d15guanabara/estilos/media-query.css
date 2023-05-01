@@ -11,6 +11,7 @@
         height: 280px;
     }
 
+    /* A propriedade float determina que um elemento deve ser retirado do seu fluxo normal e posicionado do lado direito ou esquerdo do seu container.*/
     section#login div#imagem {
         float: left;
         width: 30%;
