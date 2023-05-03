@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        /* Paro o alinhamento dos elementos com o uso da flexbox, é requerido com que ela seja definida dentro do elemento pai daqueles elementos. Ou seja, alteramos as posições através do elemento pai e não dos filhos.
+        Obs: Flexbox é normalmente utilizada para aplicações em pequena escala, pois carecem de flexibilidade em relação a redimensionamentos, alongamentos ou encolhimento. */
+        main {
+            display: flex; 
+            background-color: black;
+            height: 100%;
+            padding: 16px;
+
+            /* flex-direction: column -> Podemos alterar o eixo principal dos elementos, para linha ou coluna. Por padrão é o row. Com o flex-direction também podemos alterar o sentindo dele, utilizando o valor reverse, funcional tanto para row quanto para column. */
+            flex-direction: row;
+
+            /* Podemos utilizar a propriedade justify-content para agruparmos os elementos em diversas posições no nosso eixo principal, como: flex-start onde os elementos ficam agrupados no canto esquerdo, flex-end no canto direito, center para ficarem centralizados no container, space-between que irá distribuir os elementos ao longo do eixo principal (o primeiro no ínicio, o último no final e os demais no espaço entre eles.), space-around que colocará um espaço entre eles e também por fora deles, como se fosse uma margem e por último o 'space-evenly' que todos os espaços inclusives as bordas, sejam iguais. Também podemos utilizar valores como safe e unsafe, fazendo com que elementos não possam ser empurrados para rendereizar fora da tela. */
+            /* justify-content: flex-start ;*/
+            justify-content: center;
+
+            /* Com a propriedade align-items poderemos agora alinhar os nossos elementos no nosso eixo secundário do container, ou seja, o eixo perpendicular (vertical no nosso exemplo). Possui muitos valores parecidos com o justify-content como: flex-start onde alinhamos os itens no ínicio do eixo perpendicular, flex-end ao final do nosso eixo, center no centro do nosso eixo. Também possuimos o valor stretch que permitirá que nossos elementos ocupem todo o eixo perpendicular possível (obs: isso se eles já não tiverem alguma altura pré-definida) e o baseline que irá alinhas todos os elementos com base do conteúdo dentro do elemento, mesmo com tamanhos diferentes. */
+            align-items: center;
+
+            /* Por padrão os elementos tentam sempre ocupar uma linha só. Mas para alterarmos este comportamento, podemos utilizar a propriedade flex-wrap que por padrão, terá o valor como 'no-wrap', ou seja, os elementos permanecerão tentando ocupar somente uma linha. Com o valor 'wrap' permitimos o flex-box a descer linhas quando os elementos já estão muito próximos do final. Por padrão os elementos serão quebrados para baixo, para alterarmos é só utilizarmos o 'wrap-reverse'. Podemos utilizar o 'flex-flow' como um shorthand para o 'flex-direction' e 'flex-wrap'*/
+            flex-wrap: wrap;
+            
+            /* Propriedade para alinharmos elementos quando estamos utilizando o 'flex-wrap', será possivel alinharmos elementos que estão em outras linhas e como o 'align-items' é para alinhar elementos no eixo perpendicular, o align-content se comporta da mesma forma. Temos valores como 'flex-start' e 'flex-end', onde as linhas ficarão agrupadas em cima ou embaixo, center para agrupar as linhas no centro, 'space-between' para este valor, como estamos trabalhando com o eixe perpendicular, o espaçamento será entre as linhas (para o nosso exemplo.) e o 'space-around' lembrando que o primeiro e último elemento possuem uma margem um pouco diferente. (obs: ele sobrepõe o valor do align-items)*/
+            align-content: center;
+
+            /* Com a propriedade gap podemos utiliza-la como se um margin, ou seja, podemos definir o valor do espaçamento entre os elementos, tanto horizontalmente e verticalmente. E podemos trabalhar com shorthands iguais aos valores do margin: 'gap: 20px', 'gap: 10px 30px' * (primeiro linhas e depois colunas). Ou para melhorar a legibilidade do nosso código, podemos utilizar os valores 'row-gap' e 'column-gap'*/
+            gap: 10px 30px ;
+        }
+        
+        div {
+            background-color: red;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+
+        .bloco1{
+            /* Com o flexbox também podemos atribuir propriedades exclusivas dos filhos. Como o order, onde ele permite com que consigamos alterar a ordem em que os elementos são dispostos na nossa janela. Podemos utilizar valores negativos. Por padrão seu valor é 0. */
+            order: 1;
+
+            /* Define a possibilide do elemento poder ou não crescer, por padrão todos os elementos possuem o valor 0. Cresce de acordo com a proporção, ou seja, se um elemento está sozinho em um espaço ele vai ocupar toda aquela área. Para tornarmos elementos um maiores que outros somente aumentamos o valor de cada um. Não recebe valor negativo por ser valores de proporcionalidade. Para entendermos melhor como se calcula o tamanho de cada elemento primeiro precisamos lembrar que já possuímos um valor pré-definido para eles, e a proporção do 'flex-grow' não é a largura total do elemento, mas apenas o que ele irá crescer a partir do tamanho dele. Ou seja, nosso bloco1 possui a largura de 150px e tem o valor do 'flex-grow' de 2, enquanto os nossos blocos 2 e 3 possuem o 'flex-grow' com valor de 1, ou seja, 2 é o dobro de 1, então basicamente pegaremos o dobro dos outros blocos e adicionaremos ao tamanho já pré-definido pelo 'width' do nosso elemento.*/
+            flex-grow: 0;
+            background-color: lightblue;
+        }
+        
+        .bloco2 {
+            order: 1;
+            flex-grow: 0;
+            background-color: lightpink;
+        }
+
+        .bloco3 {
+            order: 1;
+            flex-grow: 0;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco3">3</div>
+        <div class="bloco1">1</div>
+        <div class="bloco2">2</div>
+    
+    </main>
+</body>
+</html>
