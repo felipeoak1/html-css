@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            
+            background-image: linear-gradient(to right, #1D1D1D, #2E394D);
+            height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            background-color: white;
+            width: 400px;
+            height: 450px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        div {
+            width: 100%;
+        }
+        
+        form {
+            text-align: center;
+            height: 100%;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: none;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            outline: 0px;
+        }
+        
+        #icheckbox{
+            width: 25%;
+            text-align: left;
+        }
+
+        #checkboxdiv {
+            text-align: left;
+        }
+
+        input[type=submit] {
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Memberbase</h1>
+    <section>
+        <div>
+            <form action="" method="POST" autocomplete="on">
+                <legend>Sign Up</legend>
+                <div>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required>
+                </div>
+                <div>
+                    <label for="iname">Nome</label>
+                    <input type="text" name="name" id="iname">
+                </div>
+                <div>
+                    <label for="ipassword">Senha</label>
+                    <input type="password" name="password" id="ipassword" required min="8">
+                </div>
+                <div id="checkboxdiv">
+                    <label for="icheckbox" id="checkbox">teste</label>
+                    <input type="checkbox" name="checkbox" id="icheckbox">
+                </div>
+                <label for="isubmit">Sign Up</label>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+</body>
+</html>
