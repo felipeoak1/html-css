@@ -66,6 +66,7 @@
             padding: 10px;
             margin-bottom: 15px;
             border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.616);
             outline: 0px;
         }
         
@@ -96,17 +97,20 @@
             <form action="" method="POST" autocomplete="on">
                 <legend>Sign Up</legend>
                 <div>
-                    <label for="iemail">Email</label>
-                    <input type="email" name="email" id="iemail" required>
-                </div>
-                <div>
                     <label for="iname">Nome</label>
-                    <input type="text" name="name" id="iname">
+                    <input type="text" name="name" id="iname" placeholder="Nome">
+                </div>
+
+                <div>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" placeholder="Email" required>
                 </div>
                 <div>
+
                     <label for="ipassword">Senha</label>
-                    <input type="password" name="password" id="ipassword" required min="8">
+                    <input type="password" name="password" id="ipassword" placeholder="Senha" required min="8">
                 </div>
+
                 <div id="checkboxdiv">
                     <label for="icheckbox" id="checkbox">teste</label>
                     <input type="checkbox" name="checkbox" id="icheckbox">
