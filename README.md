@@ -1,6 +1,6 @@
 # Projetos e exercícios.
 
-<h1>Curso de HTML5 e CSS3 do CursoemVídeo.</h1>
+<h2>Curso de HTML5 e CSS3 do CursoemVídeo.</h2>
 
 <h2>Alguns projetos realizados somente com HTML5 e CSS3.</h2>
 
