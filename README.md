@@ -1,7 +1,8 @@
-# html-css
+# Projetos e exercícios.
 
- Curso de HTML5 e CSS3 do CursoemVídeo
- Gerenciamento de repositórios.
+<h1>Curso de HTML5 e CSS3 do CursoemVídeo.</h1>
+
+<h2>Alguns projetos realizados somente com HTML5 e CSS3.</h2>
 
 <a href="https://felipeoak1.github.io/projeto-android/">Link projeto Android</a>
 
