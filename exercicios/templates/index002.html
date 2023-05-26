@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #FF797E;
+        }
+
+        section {
+            background-color: #FF797E;
+            width: 80vw;
+            height: 80vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        #text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50%;
+            height: 100%;
+            background-color: #FF797E;
+        }
+
+        h1 {
+           font-family: 'Times New Roman', Times, serif; 
+           font-size: 3em;
+           width: 50%;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 1.2em;
+            width: 80%;
+        }
+
+        #textform {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            height: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: #5C55A0;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+        }
+
+        label {
+            display: none;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            background-color: white;
+            width: 30vw;
+            height: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            max-height: 500px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+        }
+
+        form input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.404);
+        }
+
+        input[type=submit] {
+            color: white;
+            background-color: #37CD88;
+            height: 12%;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article id="text">
+            <div>
+                <h1>Learn to code by watching others</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, accusamus. Dignissimos amet delectus maiores aut eos voluptatem porro repellendus illo temporibus doloremque vel magni, repudiandae ratione sapiente incidunt ut dicta.</p>
+            </div>
+        </article>
+
+        <article id="textform">
+            <h2>Try it free</h2>
+            <form action="" method="POST" autocomplete="on">
+                <label for="iname">Name</label>
+                <input type="text" name="name" id="iname" autocomplete="name" minlength="8"  placeholder="Name" required>
+
+                <label for="ilastname">Last Name</label>
+                <input type="text" name="lastname" id="ilastname" autocomplete="family-name" placeholder="Last Name" required>
+
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="E-mail" required>
+
+                <label for="ipass">Password</label>
+                <input type="password" name="pass" id="ipass" minlength="8" maxlength="20" placeholder="Password" required >
+
+                <label for="iage">Age</label>
+                <input type="date" name="age" id="iage">
+
+                <input type="submit" value="Claim your free trial">
+            </form>
+        </article>
+    </section>
+</body>
+</html>
