@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Examples</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            height: 100vh;
+            gap: 10px;
+        }
+
+        section#sec1 {
+            height: 200px;
+            background-color: blue;
+        }
+
+        section#sec2 {
+            height: 200px;
+            background-color: rgb(231, 159, 25);
+        }
+
+        section#sec3 {
+            height: 200px;
+            background-color: green;
+        }
+
+        section#sec4 {
+            grid-column: 1/2;
+            height: 200px;
+            background-color: rgb(231, 159, 25);
+        }
+
+   
+
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="sec1">
+            Header
+        </section>
+
+        <section id="sec2">
+           Left Sidebar
+        </section>
+
+        <section id="sec3">
+            Main
+        </section>
+
+        <section id="sec4">
+            Right Sidebar
+        </section>
+
+    </main>
+</body>
+</html>
